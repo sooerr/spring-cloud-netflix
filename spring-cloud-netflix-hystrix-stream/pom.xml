@@ -80,6 +80,8 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-netflix-hystrix-contract</artifactId>
+			<!-- 外部库未找到2.1.1包，暂时使用2.0.0包 -->
+			<version>2.0.0.BUILD-SNAPSHOT</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -99,6 +101,8 @@
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-contract-maven-plugin</artifactId>
 				<version>${donotreplacespring-cloud-contract.version}</version>
+				<!-- 20190301修改依赖版本 -->
+				<!-- <version>2.1.1.BUILD-SNAPSHOT</version> -->
 				<extensions>true</extensions>
 				<configuration>
 					<baseClassMappings>
@@ -112,7 +116,9 @@
 					<dependency>
 						<groupId>org.springframework.cloud</groupId>
 						<artifactId>spring-cloud-netflix-hystrix-contract</artifactId>
-						<version>${project.version}</version>
+						<!-- <version>${project.version}</version> -->
+						<!-- 外部库未找到2.1.1包，暂时使用2.0.0包 -->
+						<version>2.0.0.BUILD-SNAPSHOT</version>
 					</dependency>
 				</dependencies>
 			</plugin>

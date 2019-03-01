@@ -129,6 +129,8 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-netflix-hystrix-contract</artifactId>
+			<!-- 外部库未找到2.1.1包，暂时使用2.0.0包 -->
+			<version>2.0.0.BUILD-SNAPSHOT</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
